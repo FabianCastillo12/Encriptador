@@ -106,6 +106,8 @@ main {
 #resultadoRespuesta {
     width: 25%;
     height: 90%;
+    min-width: 400px;
+    min-height: 200px;
     border-radius: 25px;
     background-color: white;
     margin: 40px;
@@ -116,6 +118,11 @@ main {
     align-items: center;
     gap: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+.resultadoRespuesta{
+    font-size: 24px;
+    text-align: center;
 }
 
 #ningunMensaje {
@@ -152,7 +159,6 @@ main {
     }
 
     #resultadoRespuesta {
-        width: 80%;
         margin: 20px;
         order: 2;
         margin:50px
@@ -180,7 +186,5 @@ main {
         text-align: start; 
     }
 
-    #resultadoRespuesta {
-       
-    }
+
 }

@@ -9,6 +9,7 @@ const encriptarTexto = () => {
                             .replace(/u/g, "ufat");
 
     document.getElementById("resultadoRespuesta").textContent = textoResultado;
+    document.getElementById("resultadoRespuesta").classList.add("resultadoRespuesta")
     ocultarElementos();
 }
 
@@ -23,8 +24,7 @@ const desencriptarTexto = () => {
                             .replace(/ufat/g, "u");
 
     document.getElementById("resultadoRespuesta").textContent = textoResultado;
-    ocultarElementos();
-    
+    ocultarElementos();  
 }
 
 const ocultarElementos = () => {
