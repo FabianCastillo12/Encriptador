@@ -8,8 +8,8 @@ const encriptarTexto = () => {
                             .replace(/o/g, "ober")
                             .replace(/u/g, "ufat");
 
-    document.getElementById("textoResultado").textContent = textoResultado;
-    
+    document.getElementById("resultadoRespuesta").textContent = textoResultado;
+    ocultarElementos();
 }
 
 const desencriptarTexto = () => {
@@ -22,6 +22,12 @@ const desencriptarTexto = () => {
                             .replace(/ober/g, "o")
                             .replace(/ufat/g, "u");
 
-    document.getElementById("textoResultado").textContent = textoResultado;
+    document.getElementById("resultadoRespuesta").textContent = textoResultado;
+    ocultarElementos();
+    
+}
+
+const ocultarElementos = () => {
+    document.getElementById("imagenRespuesta").style.display = "none"
 }
 
